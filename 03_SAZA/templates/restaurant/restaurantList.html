@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% load static %}
+
+<head>
+    <link rel="stylesheet" href="/static/css/restaurant.css">
+</head>
+<body>
+    <div class="main_content">
+        
+        <div id="check_location">
+            <div id="check_location_logo"><img src="{%static 'img/locationIcon.png' %}" style="width: 120px;"></div>
+            <div id="location_question" style="margin-top: 15px;">당신의 위치를 확인하세요.</div>
+            <div id="location_button">
+                <input type="button" value="내 위치 확인하기" onclick="Javascript:GpsGetCurrentPosition();"  />
+            </div>
+        </div>
+            <div id="result_location" style="display: none;">
+                <div id="map" style="width: 70%; ;height: 400px;margin: 20px auto 0px auto;"></div>
+                <div id="errormsg"></div>
+                <div id="latlng"></div>
+            </div>
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl9B1sHmutiLWvxlz0ma-Dz_gCths3jkk" type="text/javascript"></script>
+        </div>
+    </div>
+    {% for r in top_10_restaurants %}
+    <div class="restaurant_list_box" style="display: none; margin-top: 20px;">
+    <ul class="restaurant_list_content">
+        <li class="restaurant_list">
+            <a href="{{ r.link }}" id="list1" class="restaurant_detail">
+                <div class="restaurant_name">{{ r.name }}</div>
+                <div class="restaurant_address">주소 : {{ r.address}}</div>
+            </a>         
+        </li>
+    </ul>
+    </div>
+    {% endfor %}
+</body>
+
+{% endblock %}

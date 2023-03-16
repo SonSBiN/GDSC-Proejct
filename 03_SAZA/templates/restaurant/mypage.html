@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="/static/css/restaurant.css">
+</head>
+<!-- 1. 사용자 정보 -->
+<!-- 2. 리뷰 입력한 맛집 (버튼)-->
+<!-- 3. 내 입력한 리뷰(버튼) -->
+<div class="total">
+   
+<div>
+    <div class="myIMG" >
+        <img class="profile" src="{%static 'img/img1.png' %}">
+    </div>
+<div class="myExplain" >
+    <h4>{{ request.user.username }} 님</h4>
+<!--   <p>useremail :{{form.useremail.value}}  </p>    --> 
+    <br/>
+</div>
+</div>
+<div class="mypage_bt">
+    <div class="myResList" href="myRestaurants.html"> 
+        <img src="{%static 'img/마이_찜_버튼.png' %}" onclick="alert('아직 구현되지 않은 기능입니다.');">
+    </div>
+    <div class="myResReview" href="reviewList.html"> 
+        <img src="{%static 'img/마이_리뷰_버튼.png' %}" onclick="alert('아직 구현되지 않은 기능입니다.');">
+    </div>
+</div>
+   <!—링크?버튼?바로가기—>
+
+</div>
+</div>
+{% endblock %}

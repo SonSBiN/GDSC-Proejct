@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'S-CoreDream-3Light';
+}
+
+
+.navbar{
+    height: 80px;
+    width: 100%;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+.navbar-nav a{
+    margin-left: 10px;
+}
+
+.navbar-wrap{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-logo-img img{
+    width: 75px;
+    height: 70px;
+}
+
+.navbar-logo-text{
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.navbar-logo-text img{
+    width: 180px;
+    height: 35px;
+}
+
+.nav-bt{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bt a{
+    color: black;
+    padding-right: 15px;
+    font-size: 1.1rem;
+}
+
+.container-fluid{
+    width: 100%;
+    padding-left: 40px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_introService{
+    height: 100px;
+    width: 30%;
+}
+
+.footer_comment{
+    padding-bottom: 10px;
+}
+
+.footer_logo img{
+    width: 80px;
+    height: 25x;
+}
+
+.footer_copyright{
+    padding-top: 20px;
+}
+
+.footer_memberintroduce{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 20px;
+    padding-top: 20px;
+}
+
+.footer_front_member, .footer_back_member{
+    padding-right: 15px;
+}
+
+
+

@@ -1,0 +1,340 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: 'S-CoreDream-3Light';
+}
+
+
+.restaurant_list_box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.restaurant_list_content{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant_list_box > ul{
+    list-style: none;
+}
+
+.restaurant_list_content > ul > li > div{
+    color: #1f1f1f;
+}
+
+.restaurant_list{
+    display: flex;
+    flex-direction: column;
+}
+
+/* index.html */
+.index_container{
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size:120%;
+    height:500px;
+    padding:50px;
+    margin-left: 8%;
+}
+
+.indexbutton{
+    display:flex;
+    flex-direction: column;
+    margin-left: 45%;
+    margin-top: 115px;
+}
+
+.service_name{
+    font-weight: bold;
+    margin-left: -20%;
+    font-size: 30px;
+}
+
+#login_btn{
+    max-width: 300px;
+    border:none;
+    border-radius: 20px;
+    width: 65%;
+    height: 70px;
+    font-size: 120%;
+    align-items: center;
+    background-color: #18A67E;
+    color: #1f1f1f;
+    font-weight: bold;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.4)
+}
+#signup_btn{
+    max-width: 300px;
+    border: none;
+    border-radius: 20px;
+    width: 65%;
+    height: 70px;
+    font-size: 120%;
+    align-items: center;   
+    background-color: #F2D884;
+    color: #1f1f1f;
+    font-weight: bold;
+    margin-bottom: 20px;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.4)
+}
+
+#hidden_review{
+    margin-top:30px;
+    margin-bottom: 0px;
+    background-color: none;
+}
+
+#here_eat{
+    background-color: none;
+}
+
+#logoimg{
+    margin-top: 10px;
+    width: 360px;
+    margin-left: 10%;
+    margin-right: 15%;
+}
+
+
+
+/* map.html (미완성) */
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.main_content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* mypage.html */
+.myPageContainer{
+box-sizing: border-box;
+
+margin-right: auto;
+margin-left : auto;
+width: 76%;
+height: 800px;
+padding-right: 4%;
+padding-left: 4%;
+padding-top:5px;
+border: 3px solid #000000;
+}
+
+.myIMG{
+margin-top: 20px;
+box-sizing: border-box;
+margin-left: auto;
+margin-right: auto;
+width: 23%;
+height: 200px;
+border-radius: 70%;
+overflow: hidden;
+border: 3px solid #000000;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.myExplain{
+    text-align: center;
+    text-decoration: underline; 
+    text-underline-position:under;
+    text-decoration-thickness:3px;
+    margin-top : 20px;
+}
+
+/*detailReview.html*/
+.restaurant-explain-wrap{
+    display: flex;
+    flex-direction: column;
+}
+
+.restaurant-explain{
+    display: flex;
+    flex-direction: row;
+}
+
+.rest{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 40px;
+    padding-left: 50px;
+    font-size: 1.3rem;
+}
+
+.resIMG{
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    border-radius: 70%;
+    overflow: hidden;
+    border: 3px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.reviewInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.reviewInput label{
+    font-size: 2rem;
+}
+
+.reviewInput input{
+    margin-top: 15px;
+    height: 300px;
+}
+
+.restaurant-explain-wrap button{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+/*myResaturants.html*/
+.myPageContainer2{
+    padding-top:20px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+#check_location{
+    margin-top: 30px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid rgba(66, 65, 65, 0.2);
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px 1px rgba(157, 156, 156, 0.2);
+    padding: 200px 50px;
+}
+
+
+#location_question{
+    font-size: 2.7rem;
+}
+
+#location_button{
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#location_button input{
+    width: 50%;
+    height: 70px;
+    font-size: 1.5rem;
+    background-color: #F9A7AE;
+    border-radius: 5px;
+    color:rgba(0, 0, 0, 0.772);
+    border: none;
+}
+
+#result_location{
+    width: 90%;
+}
+
+.restaurant_list_box{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.restaurant_list_content{
+    width: 90%;
+}
+
+.restaurant_list{
+    list-style: none;
+}
+
+.restaurant_list a{
+    text-decoration: none;
+    margin-left: 25%;
+    color: black;
+    height: 80px;
+    width: 60%;
+    padding: 0;
+    border-top: 1px solid black;
+}
+
+.restaurant_detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.restaurant_name{
+    padding-bottom: 1px;
+}
+
+.restaurant_address{
+    padding-top: 5px;
+}
+
+
+/* mypage.html */
+.myIMG{
+    width: 150px;
+    height: 140px;
+    border-radius: 1px solid rgb(214, 214, 214);
+    margin: 0 auto;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.myIMG img{
+    width: 100%;
+    height: 100%;
+    border-radius: 55%;
+}
+
+.myExplain{
+    text-align: center;
+    text-decoration: underline; 
+    text-underline-position:under;
+    margin-top : 20px;
+}
+
+.myResList img, .myResReview img{
+    width: 300px;
+    height: 300px;
+}
+
+.mypage_bt{
+    width: 45%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    filter: drop-shadow(0px 10px 10px rgba(108, 108, 108, 0.095));
+}
+
